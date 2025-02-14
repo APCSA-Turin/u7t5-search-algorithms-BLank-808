@@ -7,12 +7,10 @@ public class BinarySearch {
         if(elements.length==0){
             return -1;
         }
-        int loopCounter = 0;
         int leftIdx =0;  
         int rightIdx =elements.length-1;
 
         while (leftIdx<=rightIdx) {  // TODO: determine this condition (hint: see slides 61-63)
-        loopCounter++; // for testing
 
         //     System.out.print(loopCounter + " "); // for testing
         int middleIdx = ((rightIdx + leftIdx)/2); // TODO: determine what this should be
@@ -27,6 +25,7 @@ public class BinarySearch {
                 leftIdx=middleIdx+1;
             }
         }
+
         return -1; // not found
     }
 
